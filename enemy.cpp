@@ -17,7 +17,7 @@ Enemy::Enemy(QGraphicsItem * parent) : QObject(), QGraphicsPixmapItem(parent)
 
     // create enemy item to put in the scene
     //setRect(0,0,70,20);
-    setPixmap(QPixmap(":/images/bf109_png.png"));
+    setPixmap(QPixmap(":/images/images/bf109_png.png"));
 
     // connect
     QTimer *timer = new QTimer();

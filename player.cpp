@@ -10,13 +10,13 @@
 Player::Player(QGraphicsItem *parent) : QGraphicsPixmapItem(parent)
 {
     // draw player
-    setPixmap(QPixmap(":/images/p40_png.png"));
+    setPixmap(QPixmap(":/images/images/p40_png.png"));
 
     // sounds
     bulletSound = new QMediaPlayer();
     bulletAudioOutput   = new QAudioOutput();
     bulletSound->setAudioOutput(bulletAudioOutput);
-    bulletSound->setSource(QUrl("qrc:/sounds/short-laser.wav"));
+    bulletSound->setSource(QUrl("qrc:/sounds/sounds/short-laser.wav"));
     bulletAudioOutput->setVolume(30);
 }
 

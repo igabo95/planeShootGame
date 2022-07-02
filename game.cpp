@@ -15,7 +15,7 @@ Game::Game(QWidget *parent){
     scene->setSceneRect(0,0,800,600);
 
     // Background
-    setBackgroundBrush(QBrush(QImage(":/images/sky.jpg")));
+    setBackgroundBrush(QBrush(QImage(":/images/images/sky.jpg")));
 
     // add a view
     setScene(scene);
@@ -46,7 +46,7 @@ Game::Game(QWidget *parent){
     backgroundMusic  = new QMediaPlayer();
     backgroundOutput = new QAudioOutput();
     backgroundMusic->setAudioOutput(backgroundOutput);
-    backgroundMusic->setSource(QUrl("qrc:/sounds/flying.mp3"));
+    backgroundMusic->setSource(QUrl("qrc:/sounds/sounds/flying.mp3"));
     backgroundOutput->setVolume(30);
     backgroundMusic->play();
 

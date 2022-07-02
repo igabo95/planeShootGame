@@ -13,7 +13,7 @@ Bullet::Bullet(QGraphicsItem * parent) : QObject(), QGraphicsPixmapItem(parent)
 {
     // create item to put in the scene
     //setRect(0,0,m_width,m_height);
-    setPixmap(QPixmap(":/images/bullet_smallest.png"));
+    setPixmap(QPixmap(":/images/images/bullet_smallest.png"));
 
     // connect
     QTimer *timer = new QTimer(this);
@@ -24,7 +24,7 @@ Bullet::Bullet(QGraphicsItem * parent) : QObject(), QGraphicsPixmapItem(parent)
     explosionSound = new QMediaPlayer();
     explosionAudioOutput = new QAudioOutput();
     explosionSound->setAudioOutput(explosionAudioOutput);
-    explosionSound->setSource(QUrl("qrc:/sounds/distant-war-explosions.wav"));
+    explosionSound->setSource(QUrl("qrc:/sounds/sounds/distant-war-explosions.wav"));
     explosionAudioOutput->setVolume(20);
 }
 
