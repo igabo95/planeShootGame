@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>short-laser.wav</file>
+        <file>flying.mp3</file>
+        <file>arcade-explosion.wav</file>
+        <file>distant-war-explosions.wav</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>p40_png.png</file>
+        <file>bf109_png.png</file>
+        <file>bullet_smallest.png</file>
+        <file>sky.jpg</file>
+    </qresource>
+</RCC>
