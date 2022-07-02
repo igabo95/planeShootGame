@@ -26,6 +26,9 @@ public:
 private:
     QMediaPlayer * backgroundMusic;
     QAudioOutput * backgroundOutput;
+    QMediaPlayer * openingSound;
+    QAudioOutput * openingOutput;
+
 
 public slots:
     void start();

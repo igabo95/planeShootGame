@@ -4,6 +4,7 @@
         <file>sounds/distant-war-explosions.wav</file>
         <file>sounds/flying.mp3</file>
         <file>sounds/short-laser.wav</file>
+        <file>sounds/start_game.wav</file>
     </qresource>
     <qresource prefix="/images">
         <file>images/bf109_png.png</file>

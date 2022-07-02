@@ -63,6 +63,14 @@ void Game::start()
 
 void Game::displayMenu()
 {
+    // opening sounds
+    openingSound = new QMediaPlayer();
+    openingOutput   = new QAudioOutput();
+    openingSound->setAudioOutput(openingOutput);
+    openingSound->setSource(QUrl("qrc:/sounds/sounds/start_game.wav"));
+    openingOutput->setVolume(30);
+    openingSound->play();
+
     // create the title text
     QGraphicsTextItem* titleText = new QGraphicsTextItem(QString("Plane Shooting Game !"));
     QFont titleFont("Times",50);
