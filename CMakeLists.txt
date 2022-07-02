@@ -19,18 +19,13 @@ find_package(Qt6 REQUIRED COMPONENTS Multimedia)
 set(
     PROJECT_SOURCES
         main.cpp
-        player.cpp
-        player.h
-        bullet.cpp
-        bullet.h
-        enemy.h
-        enemy.cpp
-        game.h
-        game.cpp
-        score.h
-        score.cpp
-        health.h
-        health.cpp
+        player.cpp player.h
+        bullet.cpp bullet.h
+        enemy.h enemy.cpp
+        game.h game.cpp
+        score.h score.cpp
+        health.h health.cpp
+        button.h button.cpp
         res.qrc
 )
 

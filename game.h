@@ -13,8 +13,10 @@
 
 
 class Game: public QGraphicsView{
+    Q_OBJECT
 public:
     Game(QWidget * parent=0);
+    void displayMenu();
 
     QGraphicsScene * scene;
     Player * player;
@@ -24,6 +26,9 @@ public:
 private:
     QMediaPlayer * backgroundMusic;
     QAudioOutput * backgroundOutput;
+
+public slots:
+    void start();
 };
 
 
